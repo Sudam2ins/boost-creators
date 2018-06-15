@@ -887,6 +887,7 @@ label{
 				@media  (max-width:776px){
 					display:block;
 					text-align: center;
+					padding:0;
 				}
 			}
 		}
@@ -919,6 +920,12 @@ label{
 			img{
 				width: 300px;
 			}
+		}
+	}
+	.padding-left30px{
+		padding-left: 30px;
+		@media  (max-width:992px){
+			padding-left: 0;
 		}
 	}
 	.padding-left20px{
