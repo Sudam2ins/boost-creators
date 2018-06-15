@@ -401,11 +401,11 @@ label {
     height: 100%; }
 
 .row35 {
-  margin-left: -35px;
-  margin-right: -35px; }
+  margin-left: -30px;
+  margin-right: -30px; }
   .row35 .column {
-    margin-left: 35px;
-    margin-right: 35px; }
+    margin-left: 30px;
+    margin-right: 30px; }
 
 .row25 {
   margin-left: -25px;
@@ -692,25 +692,38 @@ label {
         margin: 0;
         font-size: 16px; }
 
-.image-row .ir-listing .mytable {
-  width: 100%; }
+.image-row .ir-listing {
+  display: table;
+  margin: 0 auto; }
+  @media (max-width: 767px) {
+    .image-row .ir-listing {
+      display: table;
+      margin: 0 auto; } }
   .image-row .ir-listing .mytable .table-cell {
     padding: 0 80px; }
+    .image-row .ir-listing .mytable .table-cell img {
+      max-width: 150px; }
+      @media (max-width: 992px) {
+        .image-row .ir-listing .mytable .table-cell img {
+          max-width: 100px; } }
     @media (max-width: 1800px) {
       .image-row .ir-listing .mytable .table-cell {
         padding: 0 50px; } }
     @media (max-width: 1600px) {
       .image-row .ir-listing .mytable .table-cell {
-        padding: 0 35px; } }
-    @media (max-width: 1600px) {
-      .image-row .ir-listing .mytable .table-cell img {
-        max-width: 150px; } }
-    @media (max-width: 1400px) {
-      .image-row .ir-listing .mytable .table-cell img {
-        max-width: 100px; } }
-    @media (max-width: 1200px) {
-      .image-row .ir-listing .mytable .table-cell img {
-        max-width: 50px; } }
+        padding: 0 48px; } }
+    @media (max-width: 1024px) {
+      .image-row .ir-listing .mytable .table-cell {
+        padding: 0 20px; } }
+    @media (max-width: 992px) {
+      .image-row .ir-listing .mytable .table-cell {
+        padding: 15px 10%;
+        display: inline-block;
+        padding-bottom: 30px; } }
+    @media (max-width: 776px) {
+      .image-row .ir-listing .mytable .table-cell {
+        display: block;
+        text-align: center; } }
 
 .footer {
   padding: 60px 0;
@@ -721,15 +734,17 @@ label {
     .footer .footer-title h3 {
       margin: 0;
       font-weight: 700;
+      font-size: 14px;
       font-size: 14px; }
   .footer .text p {
-    margin: 0; }
+    margin: 0;
+    font-size: 14px; }
   .footer .logo-text .logo {
-    margin-bottom: 50px; }
+    margin-bottom: 40px; }
     .footer .logo-text .logo img {
       width: 300px; }
   .footer .padding-left20px {
-    padding-left: 30px; }
+    padding-left: 20px; }
     @media (max-width: 992px) {
       .footer .padding-left20px {
         padding-left: 0; } }
